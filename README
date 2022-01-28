@@ -1,0 +1,15 @@
+# USE ESLINT TO ORGANIZE THE CODE
+yarn eslint --fix src --ext .js
+
+# USE SEQUELIZE
+# execute to create a new migration
+yarn sequelize migration:generate --name migration_name
+
+# execute the last migration created
+yarn sequelize db:migrate
+
+# execute undo the last migration created
+yarn sequelize db:migrate:undo
+
+# execute all the last migration created
+yarn sequelize db:migrate:undo:all
