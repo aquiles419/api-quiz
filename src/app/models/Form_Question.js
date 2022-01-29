@@ -1,6 +1,6 @@
 import Sequelize, { Model } from 'sequelize';
 
-class Quiz extends Model {
+class Form_Question extends Model {
     static init(sequelize) {
         super.init(
             {
@@ -9,11 +9,18 @@ class Quiz extends Model {
                     primaryKey: true,
                     autoIncrement: true,
                 },
-                name: Sequelize.STRING,
+                id_quiz: {
+                    type: Sequelize.INTEGER,
+                    references: { model: 'quiz', key: 'id' },
+                },
+                id_question: {
+                    type: Sequelize.INTEGER,
+                    references: { model: 'questions', key: 'id' },
+                },
             },
             {
                 sequelize,
-                tableName: 'quiz',
+                tableName: 'form_question',
                 timestamps: false,
                 underscored: false,
             }
@@ -21,4 +28,4 @@ class Quiz extends Model {
     }
 }
 
-export default Quiz;
+export default Form_Question;
