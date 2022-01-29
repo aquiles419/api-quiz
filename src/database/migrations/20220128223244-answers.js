@@ -7,7 +7,7 @@ module.exports = {
                 autoIncrement: true,
                 primaryKey: true,
             },
-            formxquestion_id: {
+            id_form_question: {
                 type: Sequelize.INTEGER,
                 references: { model: 'form_question', key: 'id' },
                 allowNull: false,
@@ -20,7 +20,7 @@ module.exports = {
                 type: Sequelize.DATE,
                 allowNull: false,
             },
-            user_id: {
+            id_user: {
                 type: Sequelize.INTEGER,
                 references: { model: 'users', key: 'id' },
                 allowNull: false,

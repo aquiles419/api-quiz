@@ -7,12 +7,12 @@ module.exports = {
                 autoIncrement: true,
                 primaryKey: true,
             },
-            quiz_id: {
+            id_quiz: {
                 type: Sequelize.INTEGER,
                 references: { model: 'quiz', key: 'id' },
                 allowNull: false,
             },
-            question_id: {
+            id_question: {
                 type: Sequelize.INTEGER,
                 references: { model: 'questions', key: 'id' },
                 allowNull: false,

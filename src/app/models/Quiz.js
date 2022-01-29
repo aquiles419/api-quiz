@@ -7,7 +7,7 @@ class Quiz extends Model {
                 id: {
                     type: Sequelize.INTEGER,
                     primaryKey: true,
-                    autoIncrement: true
+                    autoIncrement: true,
                 },
                 name: Sequelize.STRING,
             },

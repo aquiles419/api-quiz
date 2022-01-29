@@ -14,6 +14,11 @@ const Errors = {
         status: 404,
         message: 'FORM_QUESTION not found.',
     },
+    ANSWER: {
+        code: 'ANSWER_NOT_FOUND',
+        status: 404,
+        message: 'ANSWER not found.',
+    },
 };
 
 export default Errors;
