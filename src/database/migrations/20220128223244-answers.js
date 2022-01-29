@@ -9,7 +9,7 @@ module.exports = {
             },
             formxquestion_id: {
                 type: Sequelize.INTEGER,
-                references: { model: 'TB_FORMXQUESTION', key: 'id' },
+                references: { model: 'TB_FORM_QUESTION', key: 'id' },
                 allowNull: false,
             },
             valor: {
