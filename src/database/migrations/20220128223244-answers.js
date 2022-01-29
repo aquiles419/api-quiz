@@ -1,6 +1,6 @@
 module.exports = {
     async up(queryInterface, Sequelize) {
-        await queryInterface.createTable('TB_ANSWERS', {
+        await queryInterface.createTable('answers', {
             id: {
                 type: Sequelize.INTEGER,
                 allowNull: false,
@@ -9,7 +9,7 @@ module.exports = {
             },
             formxquestion_id: {
                 type: Sequelize.INTEGER,
-                references: { model: 'TB_FORM_QUESTION', key: 'id' },
+                references: { model: 'form_question', key: 'id' },
                 allowNull: false,
             },
             valor: {
@@ -22,7 +22,7 @@ module.exports = {
             },
             user_id: {
                 type: Sequelize.INTEGER,
-                references: { model: 'TB_USERS', key: 'id' },
+                references: { model: 'users', key: 'id' },
                 allowNull: false,
             },
             created_at: {
@@ -37,6 +37,6 @@ module.exports = {
     },
 
     async down(queryInterface) {
-        await queryInterface.dropTable('TB_ANSWERS');
+        await queryInterface.dropTable('answers');
     },
 };

@@ -13,7 +13,7 @@ class Quiz extends Model {
             },
             {
                 sequelize,
-                tableName: 'TB_QUIZ',
+                tableName: 'quiz',
                 timestamps: false,
                 underscored: false,
             }
