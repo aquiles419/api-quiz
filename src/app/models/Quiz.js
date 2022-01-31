@@ -14,8 +14,8 @@ class Quiz extends Model {
             {
                 sequelize,
                 tableName: 'quiz',
-                timestamps: false,
-                underscored: false,
+                timestamps: true,
+                underscored: true,
             }
         );
     }

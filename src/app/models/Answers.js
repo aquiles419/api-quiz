@@ -22,8 +22,8 @@ class Answers extends Model {
             {
                 sequelize,
                 tableName: 'answers',
-                timestamps: false,
-                underscored: false,
+                timestamps: true,
+                underscored: true,
             }
         );
     }

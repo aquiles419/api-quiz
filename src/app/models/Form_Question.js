@@ -21,8 +21,8 @@ class Form_Question extends Model {
             {
                 sequelize,
                 tableName: 'form_question',
-                timestamps: false,
-                underscored: false,
+                timestamps: true,
+                underscored: true,
             }
         );
     }
