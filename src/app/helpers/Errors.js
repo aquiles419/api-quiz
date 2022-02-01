@@ -19,6 +19,11 @@ const Errors = {
         status: 404,
         message: 'ANSWER not found.',
     },
+    COMPANY: {
+        code: 'COMPANY_NOT_FOUND',
+        status: 404,
+        message: 'COMPANY not found.',
+    },
 };
 
 export default Errors;
