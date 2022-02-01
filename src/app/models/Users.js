@@ -11,12 +11,6 @@ class User extends Model {
                 password_hash: Sequelize.STRING,
                 id_group: Sequelize.INTEGER,
             },
-                {
-                    id_company: {
-                    type: Sequelize.INTEGER , references: { model: 'company', key: 'id' },
-                }
-            },
-
             {
                 sequelize,
             }
